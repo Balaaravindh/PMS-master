@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PMS_TNLA2021</string>
+    <string name="welcome_text">Welcome, <b>Mr./Ms. xxx,</b>Presiding Officer</string>
+</resources>

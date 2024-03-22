@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MockPollActivity">
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:tint="@color/new_bg"
+                android:src="@mipmap/back" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/back">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/title_text"
+                android:src="@mipmap/logo" />
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/opensans_regular"
+                android:text="Poll Completed"
+                android:textColor="@color/new_bg"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/home"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:tint="@color/new_bg"
+                android:src="@mipmap/home" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_white"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/header_layout"
+        android:background="#FFF" />
+
+    <TextView
+        android:id="@+id/pollday_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/opensans_regular"
+        android:padding="10dp"
+        android:text="Please enter the status of Poll Completion"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/mock_poll_conducted"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/pollday_text"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_bg"
+        android:fontFamily="@font/opensans_regular"
+        android:text="Polling Completed ?"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14dp" />
+
+    <RelativeLayout
+        android:id="@+id/yes_no_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mock_poll_conducted">
+
+        <RelativeLayout
+            android:id="@+id/check_yes"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/image_bg_checkbox">
+
+            <ImageView
+                android:id="@+id/check_image_yes"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/tick"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/yes_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/check_yes"
+            android:fontFamily="@font/opensans_regular"
+            android:padding="10dp"
+            android:text="Yes"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="16dp" />
+
+        <RelativeLayout
+            android:id="@+id/check_no"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/yes_text"
+            android:background="@drawable/image_bg_checkbox">
+
+            <ImageView
+                android:id="@+id/check_image_no"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/cancel"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/no_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/check_no"
+            android:fontFamily="@font/opensans_regular"
+            android:padding="10dp"
+            android:text="No"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/submit_btn_mock_poll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/yes_no_layout"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_bg"
+        android:fontFamily="@font/opensans_regular"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14dp" />
+
+
+</RelativeLayout>
