@@ -32,7 +32,7 @@
             android:textAlignment="center"
             android:textColor="@color/colorPrimary"
             android:textAllCaps="true"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:textStyle="bold"/>
 
     </RelativeLayout>
@@ -51,7 +51,7 @@
         android:fontFamily="@font/opensans_regular"
         android:text="@string/exit"
         android:textAllCaps="true"
-        android:textSize="16sp"
+        android:textSize="14sp"
         android:textStyle="bold"
         android:textColor="@color/colorPrimary" />
 

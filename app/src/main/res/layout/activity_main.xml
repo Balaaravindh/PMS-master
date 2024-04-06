@@ -94,32 +94,32 @@
             android:text="@string/welcome_text"
             android:textAlignment="center"
             android:textColor="#000"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
     </RelativeLayout>
 
     <Button
         android:id="@+id/pre_polled_day"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="55dp"
         android:layout_below="@+id/logo_layout"
         android:layout_centerInParent="true"
         android:layout_marginLeft="35dp"
-        android:layout_marginRight="35dp"
         android:layout_marginTop="10sp"
+        android:layout_marginRight="35dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/button_bg"
         android:fontFamily="@font/opensans_regular"
         android:text="@string/pre_poll_day"
         android:textAllCaps="true"
         android:textColor="@color/colorPrimary"
-        android:textSize="16sp"
+        android:textSize="14sp"
         android:textStyle="bold" />
 
     <Button
         android:id="@+id/poll_day"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="55dp"
         android:layout_marginLeft="35dp"
         android:layout_marginRight="35dp"
         android:background="@drawable/button_bg"
@@ -128,13 +128,13 @@
         android:textAllCaps="true"
         android:layout_below="@+id/pre_polled_day"
         android:textColor="@color/colorPrimary"
-        android:textSize="16sp"
+        android:textSize="14sp"
         android:textStyle="bold" />
 
     <Button
         android:id="@+id/btn_exit"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="55dp"
         android:layout_below="@+id/poll_day"
         android:layout_marginBottom="10dp"
         android:layout_marginLeft="35dp"
@@ -144,7 +144,7 @@
         android:fontFamily="@font/opensans_regular"
         android:text="@string/logout"
         android:textAllCaps="true"
-        android:textSize="16sp"
+        android:textSize="14sp"
         android:textStyle="bold"
         android:textColor="@color/colorPrimary" />
 

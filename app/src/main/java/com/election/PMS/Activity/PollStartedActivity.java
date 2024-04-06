@@ -78,30 +78,15 @@ public class PollStartedActivity extends AppCompatActivity {
         }
 
         check_yes.setOnClickListener(v -> {
-            if (check_image_yes.getVisibility() == View.VISIBLE) {
-                check_image_yes.setVisibility(View.GONE);
-            } else {
-                if (check_image_no.getVisibility() == View.VISIBLE) {
-                    check_image_yes.setVisibility(View.GONE);
-                } else {
-                    check_image_yes.setVisibility(View.VISIBLE);
-                    poll_start = true;
-                }
-
-            }
+            poll_start = true;
+            check_image_yes.setVisibility(View.VISIBLE);
+            check_image_no.setVisibility(View.GONE);
         });
 
         check_no.setOnClickListener(v -> {
-            if (check_image_no.getVisibility() == View.VISIBLE) {
-                check_image_no.setVisibility(View.GONE);
-            } else {
-                if (check_image_yes.getVisibility() == View.VISIBLE) {
-                    check_image_no.setVisibility(View.GONE);
-                } else {
-                    check_image_no.setVisibility(View.VISIBLE);
-                    poll_start = false;
-                }
-            }
+            poll_start = false;
+            check_image_yes.setVisibility(View.GONE);
+            check_image_no.setVisibility(View.VISIBLE);
         });
 
         back.setOnClickListener(v -> finish());

@@ -99,7 +99,7 @@
             android:textColor="@color/colorPrimary"
             android:textAllCaps="true"
             android:textStyle="bold"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/poll_started"
@@ -114,7 +114,7 @@
             android:textColor="@color/colorPrimary"
             android:textAllCaps="true"
             android:textStyle="bold"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
         <RelativeLayout
             android:id="@+id/dropdown"
@@ -137,10 +137,10 @@
                 android:gravity="center_horizontal"
                 android:text="@string/select_time"
                 android:textAlignment="center"
-                android:textColor="@color/colorPrimary"
                 android:textAllCaps="true"
-                android:textStyle="bold"
-                android:textSize="16sp" />
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
 
         </RelativeLayout>
 
@@ -157,7 +157,7 @@
             android:textColor="@color/colorPrimary"
             android:textAllCaps="true"
             android:textStyle="bold"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/final_btn"
@@ -173,7 +173,7 @@
             android:textColor="@color/colorPrimary"
             android:textAllCaps="true"
             android:textStyle="bold"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
     </LinearLayout>
 

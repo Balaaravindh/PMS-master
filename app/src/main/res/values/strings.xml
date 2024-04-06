@@ -25,13 +25,13 @@
     <string name="mock_poll_conducted">Mock Poll Conducted?</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
-    <string name="polling_completed">Polling Completed ?</string>
+    <string name="polling_completed">Polling Completed?</string>
     <string name="please_enter_the_status_of_poll_completion">Please enter the status of Poll Completion</string>
     <string name="poll_completed">Poll Completed</string>
     <string name="poll_started">Poll Started</string>
     <string name="select_time">Select Time</string>
     <string name="commencement_of_poll">Commencement of Poll</string>
-    <string name="polling_started">Polling Started ?</string>
+    <string name="polling_started">Polling Started?</string>
     <string name="pre_poll_day_information">Pre Poll day information</string>
     <string name="y">Y</string>
     <string name="n">N</string>

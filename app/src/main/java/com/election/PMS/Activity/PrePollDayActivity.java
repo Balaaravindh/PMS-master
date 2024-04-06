@@ -90,55 +90,27 @@ public class PrePollDayActivity extends AppCompatActivity {
         }
 
         check_yes_1.setOnClickListener(v -> {
-            if (check_image_yes_1.getVisibility() == View.VISIBLE) {
-                check_image_yes_1.setVisibility(View.GONE);
-            } else {
-                if (check_image_no_1.getVisibility() == View.VISIBLE) {
-                    check_image_yes_1.setVisibility(View.GONE);
-                } else {
-                    check_image_yes_1.setVisibility(View.VISIBLE);
-                    party_value = true;
-                }
-            }
+            party_value = true;
+            check_image_yes_1.setVisibility(View.VISIBLE);
+            check_image_no_1.setVisibility(View.GONE);
         });
 
         check_no_1.setOnClickListener(v -> {
-            if (check_image_no_1.getVisibility() == View.VISIBLE) {
-                check_image_no_1.setVisibility(View.GONE);
-            } else {
-                if (check_image_yes_1.getVisibility() == View.VISIBLE) {
-                    check_image_no_1.setVisibility(View.GONE);
-                } else {
-                    check_image_no_1.setVisibility(View.VISIBLE);
-                    party_value = false;
-                }
-            }
+            party_value = false;
+            check_image_yes_1.setVisibility(View.GONE);
+            check_image_no_1.setVisibility(View.VISIBLE);
         });
 
         check_yes_2.setOnClickListener(v -> {
-            if (check_image_yes_2.getVisibility() == View.VISIBLE) {
-                check_image_yes_2.setVisibility(View.GONE);
-            } else {
-                if (check_image_no_2.getVisibility() == View.VISIBLE) {
-                    check_image_yes_2.setVisibility(View.GONE);
-                } else {
-                    check_image_yes_2.setVisibility(View.VISIBLE);
-                    material_value = true;
-                }
-            }
+            material_value = true;
+            check_image_yes_2.setVisibility(View.VISIBLE);
+            check_image_no_2.setVisibility(View.GONE);
         });
 
         check_no_2.setOnClickListener(v -> {
-            if (check_image_no_2.getVisibility() == View.VISIBLE) {
-                check_image_no_2.setVisibility(View.GONE);
-            } else {
-                if (check_image_yes_2.getVisibility() == View.VISIBLE) {
-                    check_image_no_2.setVisibility(View.GONE);
-                } else {
-                    check_image_no_2.setVisibility(View.VISIBLE);
-                    material_value = false;
-                }
-            }
+            material_value = false;
+            check_image_no_2.setVisibility(View.VISIBLE);
+            check_image_yes_2.setVisibility(View.GONE);
         });
 
         back.setOnClickListener(v -> finish());

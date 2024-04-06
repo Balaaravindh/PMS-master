@@ -77,30 +77,15 @@ public class MockPollActivity extends AppCompatActivity {
         }
 
         check_yes.setOnClickListener(v -> {
-            if (check_image_yes.getVisibility() == View.VISIBLE) {
-                check_image_yes.setVisibility(View.GONE);
-            } else {
-                if (check_image_no.getVisibility() == View.VISIBLE) {
-                    check_image_yes.setVisibility(View.GONE);
-                } else {
-                    check_image_yes.setVisibility(View.VISIBLE);
-                    IsMockPollConducted = true;
-                }
-
-            }
+            IsMockPollConducted = true;
+            check_image_yes.setVisibility(View.VISIBLE);
+            check_image_no.setVisibility(View.GONE);
         });
 
         check_no.setOnClickListener(v -> {
-            if (check_image_no.getVisibility() == View.VISIBLE) {
-                check_image_no.setVisibility(View.GONE);
-            } else {
-                if (check_image_yes.getVisibility() == View.VISIBLE) {
-                    check_image_no.setVisibility(View.GONE);
-                } else {
-                    check_image_no.setVisibility(View.VISIBLE);
-                    IsMockPollConducted = false;
-                }
-            }
+            IsMockPollConducted = false;
+            check_image_yes.setVisibility(View.GONE);
+            check_image_no.setVisibility(View.VISIBLE);
         });
 
         submit_btn_mock_poll.setOnClickListener(v -> {

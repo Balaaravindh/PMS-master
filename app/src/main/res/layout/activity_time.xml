@@ -122,8 +122,9 @@
         android:fontFamily="@font/opensans_regular"
         android:hint="@string/hint_count"
         android:inputType="number"
+        android:textColorHint="#808080"
         android:textAlignment="center"
-        android:textSize="16sp"
+        android:textSize="14sp"
         android:textStyle="bold" />
 
     <Button
@@ -141,7 +142,7 @@
         android:textAllCaps="true"
         android:textStyle="bold"
         android:textColor="@color/colorPrimary"
-        android:textSize="16sp" />
+        android:textSize="14sp" />
 
 
 </RelativeLayout>

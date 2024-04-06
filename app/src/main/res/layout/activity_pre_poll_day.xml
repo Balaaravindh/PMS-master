@@ -285,6 +285,6 @@
         android:textAllCaps="true"
         android:textStyle="bold"
         android:textColor="@color/colorPrimary"
-        android:textSize="16sp" />
+        android:textSize="14sp" />
 
 </RelativeLayout>

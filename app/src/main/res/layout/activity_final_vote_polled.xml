@@ -141,12 +141,13 @@
                         android:enabled="false"
                         android:gravity="center_vertical"
                         android:hint="@string/hint_count"
+                        android:textColorHint="#808080"
                         android:layout_gravity="center_vertical"
                         android:inputType="number"
                         android:maxLength="10"
                         android:paddingLeft="20dp"
                         android:textColor="#000"
-                        android:textSize="16sp"
+                        android:textSize="14sp"
                         android:fontFamily="@font/opensans_regular"
                         android:textStyle="bold"/>
 
@@ -196,7 +197,8 @@
                         android:layout_weight="1"
                         android:paddingLeft="20dp"
                         android:textColor="#000"
-                        android:textSize="16sp"
+                        android:textColorHint="#808080"
+                        android:textSize="14sp"
                         android:fontFamily="@font/opensans_regular"
                         android:textStyle="bold"/>
 
@@ -235,10 +237,11 @@
                         android:maxLength="4"
                         android:fontFamily="@font/opensans_regular"
                         android:textStyle="bold"
+                        android:textColorHint="#808080"
                         android:layout_gravity="center_vertical"
                         android:paddingLeft="20dp"
                         android:textColor="#000"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
 
                 </LinearLayout>
 
@@ -276,9 +279,10 @@
                         android:layout_gravity="center_vertical"
                         android:inputType="number"
                         android:maxLength="4"
+                        android:textColorHint="#808080"
                         android:paddingLeft="20sp"
                         android:textColor="#000"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
 
                 </LinearLayout>
 
@@ -329,18 +333,19 @@
                             android:hint="@string/hint_count"
                             android:inputType="number"
                             android:maxLength="10"
+                            android:textColorHint="#808080"
                             android:fontFamily="@font/opensans_regular"
                             android:textStyle="bold"
                             android:paddingLeft="20dp"
                             android:textColor="#000"
-                            android:textSize="16sp" />
+                            android:textSize="14sp" />
 
                     </LinearLayout>
 
                     <Button
                         android:id="@+id/submit_btn"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
+                        android:layout_height="55dp"
                         android:layout_below="@+id/totalLayout"
                         android:layout_marginBottom="20dp"
                         android:layout_marginLeft="20dp"
@@ -352,7 +357,7 @@
                         android:textColor="@color/colorPrimary"
                         android:textAllCaps="true"
                         android:textStyle="bold"
-                        android:textSize="16dp" />
+                        android:textSize="14sp" />
 
                 </RelativeLayout>
 
