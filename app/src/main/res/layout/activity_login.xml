@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".Activity.LoginActivity">
+
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_above="@+id/phone_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:src="@mipmap/logo" />
+
+
+    <TextView
+        android:id="@+id/phone_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/phone_number"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:padding="10dp"
+        android:fontFamily="@font/opensans_regular"
+        android:text="Login"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/new_bg"
+        android:textSize="20dp"
+        android:textAllCaps="true"
+        android:gravity="center_horizontal" />
+
+
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        android:text="9080308391"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/edittext"
+        android:hint="@string/hint_phone_number"
+        android:inputType="number"
+        android:maxLength="10"
+        android:fontFamily="@font/opensans_regular"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:textColor="#000"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/phone_number"
+        android:background="@drawable/edittext"
+        android:hint="@string/hint_enter_pin"
+        android:text="1234"
+        android:textAllCaps="true"
+        android:fontFamily="@font/opensans_regular"
+        android:textStyle="bold"
+        android:inputType="numberPassword"
+        android:maxLength="4"
+        android:paddingLeft="20dp"
+        android:textColor="#000"
+        android:textSize="16dp" />
+
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/password"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_bg"
+        android:fontFamily="@font/opensans_regular"
+        android:text="@string/login"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textSize="16dp"
+        android:textColor="@color/colorPrimary" />
+
+
+</RelativeLayout>

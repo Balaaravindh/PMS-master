@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.PollMonitor" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/new_bg</item>
+        <item name="colorPrimaryVariant">@color/new_bg</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/new_bg</item>
+        <item name="colorSecondaryVariant">@color/new_bg</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Base.ButtonStyle.Red" parent="Widget.AppCompat.Button">
+        <item name="android:fontFamily">@font/opensans_regular</item>
+        <item name="android:background">#BC2828</item>
+        <item name="android:backgroundTint">#BC2828</item>
+    </style>
+
+    <style name="Base.ButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:fontFamily">@font/opensans_regular</item>
+        <item name="android:background">@color/new_bg</item>
+    </style>
+
+</resources>
