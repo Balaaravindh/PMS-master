@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PMS_TNLA2024</string>
+    <string name="app_name">PMS_GELS2024</string>
     <string name="welcome_text">Welcome, <b>Mr./Ms. xxx,</b>Presiding Officer</string>
     <string name="login">Login</string>
     <string name="booth_number_name">Booth Number / Name :</string>
