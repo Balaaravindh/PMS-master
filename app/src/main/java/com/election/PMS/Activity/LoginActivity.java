@@ -19,6 +19,7 @@ import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.election.PMS.Common.Constant;
 import com.election.PMS.Common.NetworkAvailable;
+import com.election.PMS.Common.NukeSSLCerts;
 import com.election.PMS.Common.Session;
 import com.election.PMS.R;
 
@@ -92,6 +93,7 @@ public class LoginActivity extends AppCompatActivity {
         init();
 
         session = new Session(this);
+        new NukeSSLCerts().nuke();
 
         next_btn.setOnClickListener(v -> {
             if (phone_number.getText().toString().isEmpty() || phone_number.getText().toString().length() != 10) {

@@ -23,6 +23,7 @@ import com.android.volley.toolbox.Volley;
 import com.election.PMS.Adapter.BoothAdapter;
 import com.election.PMS.Common.Constant;
 import com.election.PMS.Common.NotificationService;
+import com.election.PMS.Common.NukeSSLCerts;
 import com.election.PMS.Common.PollStartedSession;
 import com.election.PMS.Common.Session;
 import com.election.PMS.R;
@@ -84,6 +85,7 @@ public class PollDayActivity extends AppCompatActivity {
         ids = getIntent().getStringExtra("id");
         assemblyId = getIntent().getStringExtra("assemblyId");
         init();
+        new NukeSSLCerts().nuke();
         timeArray = new ArrayList<>();
         timeArray.add("09:00 AM");
         timeArray.add("11:00 AM");

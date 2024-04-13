@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.election.PMS.Common.NukeSSLCerts;
 import com.election.PMS.R;
 
 public class NotificationView extends Activity {
@@ -19,6 +20,7 @@ public class NotificationView extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.notificationview);
 
+        new NukeSSLCerts().nuke();
         // Create Notification Manager
         NotificationManager notificationmanager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         // Dismiss Notification

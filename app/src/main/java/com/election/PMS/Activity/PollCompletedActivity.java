@@ -18,6 +18,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.election.PMS.Common.Constant;
+import com.election.PMS.Common.NukeSSLCerts;
 import com.election.PMS.Common.Session;
 import com.election.PMS.R;
 
@@ -61,6 +62,7 @@ public class PollCompletedActivity extends AppCompatActivity {
         init();
 
         session = new Session(this);
+        new NukeSSLCerts().nuke();
         user = session.getProfileManagerDetails();
 
         if(isPollingCompleted.equals("true")){

@@ -13,6 +13,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
+import com.election.PMS.Common.NukeSSLCerts;
 import com.election.PMS.Common.PollStartedSession;
 import com.election.PMS.Common.Session;
 import com.election.PMS.R;
@@ -40,6 +41,7 @@ public class AC_PC_Activity extends AppCompatActivity {
         inti();
         requestPermission();
         session = new Session(this);
+        new NukeSSLCerts().nuke();
         user = session.getProfileManagerDetails();
         pollStartedSession = new PollStartedSession(this);
         if(user.get("type").equals("BLO")){

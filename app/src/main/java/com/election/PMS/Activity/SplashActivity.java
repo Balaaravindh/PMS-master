@@ -9,6 +9,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.election.PMS.Common.NotificationService;
+import com.election.PMS.Common.NukeSSLCerts;
 import com.election.PMS.Common.PollStartedSession;
 import com.election.PMS.Common.Session;
 import com.election.PMS.R;
@@ -46,6 +47,7 @@ public class SplashActivity extends AppCompatActivity {
         pollvalue = pollStartedSession.getPollStartedSession();
 
         session = new Session(this);
+        new NukeSSLCerts().nuke();
         user = session.getProfileManagerDetails();
 
         new Handler().postDelayed(() -> {
