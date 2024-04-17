@@ -83,7 +83,7 @@ public class TimeActivity extends AppCompatActivity {
         }
 
         count_editext.addTextChangedListener(mTextEditorWatcher);
-        time_text.setText(Html.fromHtml("<b>" + time + " Status.</b><br><br>Please enter the No. of votes polled till " + time));
+        time_text.setText(Html.fromHtml("Up to <b>" + time + " Status.</b><br><br>Please enter the No. of votes polled till " + time));
 
         back.setOnClickListener(v -> finish());
 
