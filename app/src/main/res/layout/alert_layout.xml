@@ -49,8 +49,6 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_below="@+id/title_lay"
-        android:layout_marginBottom="5dp"
-        android:layout_marginTop="5dp"
         android:background="@color/edit_text_bg" />
 
     <GridView
@@ -58,7 +56,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/view"
-        android:layout_marginTop="4dp"
         android:background="@color/colorPrimary"
         android:divider="@color/edit_text_bg"
         android:numColumns="3"

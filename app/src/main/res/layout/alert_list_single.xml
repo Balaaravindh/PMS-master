@@ -5,7 +5,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:layout_margin="10dp"
+        android:layout_margin="5sp"
         android:background="@drawable/time_bg">
 
         <TextView
@@ -23,7 +23,7 @@
             android:layout_above="@+id/centerLine"
             android:textAllCaps="false"
             android:textStyle="bold"
-            android:textSize="14sp" />
+            android:textSize="13sp" />
 
         <RelativeLayout
             android:id="@+id/centerLine"
